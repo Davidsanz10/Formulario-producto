@@ -24,13 +24,13 @@
                 <!-- Nombre del Producto -->
                 <div class="form-group">
                     <label for="nombre">Nombre del Producto</label>
-                    <input type="text" id="nombre" name="nombre" minlength="2" maxlength="50" required>
+                    <input type="text" id="nombre" name="nombre" minlength="2" maxlength="50" >
                 </div>
 
                 <!-- Bodega -->
                 <div class="form-group">
                     <label for="bodega">Bodega</label>
-                    <select id="bodega" name="bodega" required>
+                    <select id="bodega" name="bodega" >
                         <option value="">Seleccione una bodega</option>
                     </select>
                 </div>
@@ -38,7 +38,7 @@
                 <!-- Sucursal -->
                 <div class="form-group">
                     <label for="sucursal">Sucursal</label>
-                    <select id="sucursal" name="sucursal" required>
+                    <select id="sucursal" name="sucursal">
                         <option value="">Seleccione una sucursal</option>
                     </select>
                 </div>
@@ -46,7 +46,7 @@
                 <!-- Moneda -->
                 <div class="form-group">
                     <label for="moneda">Moneda</label>
-                    <select id="moneda" name="moneda" required>
+                    <select id="moneda" name="moneda">
                         <option value="">Seleccione una moneda</option>
                     </select>
                 </div>
@@ -54,7 +54,7 @@
                 <!-- Precio -->
                 <div class="form-group">
                     <label for="precio">Precio</label>
-                    <input type="number" id="precio" name="precio" required pattern="^\d+(\.\d{1,2})?$" title="Debe ser un número positivo con hasta dos decimales">
+                    <input type="number" id="precio" name="precio"  pattern="^\d+(\.\d{1,2})?$" title="Debe ser un número positivo con hasta dos decimales">
                 </div>
 
                 <!-- Material del Producto -->
@@ -78,7 +78,7 @@
                 <!-- Descripción del Producto -->
                 <div class="form-group">
                     <label for="descripcion">Descripción del Producto</label>
-                    <textarea id="descripcion" name="descripcion" minlength="10" maxlength="1000" required></textarea>
+                    <textarea id="descripcion" name="descripcion" minlength="10" maxlength="1000" ></textarea>
                 </div>
 
                 <!-- Botón de Guardar -->
@@ -193,7 +193,7 @@
                     error: function(xhr, status, error) {
                         alert("Ocurrió un error al procesar la solicitud.");
                         console.error("Error al procesar la solicitud:", error);
-                        window.location.href = 'index.php'; 
+                        // window.location.href = 'index.php'; 
                     }
                 });
             });
