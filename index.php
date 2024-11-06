@@ -31,7 +31,7 @@
                 <div class="form-group">
                     <label for="bodega">Bodega</label>
                     <select id="bodega" name="bodega" >
-                        <option value="">Seleccione una bodega</option>
+                        <option value=""></option>
                     </select>
                 </div>
 
@@ -39,7 +39,7 @@
                 <div class="form-group">
                     <label for="sucursal">Sucursal</label>
                     <select id="sucursal" name="sucursal">
-                        <option value="">Seleccione una sucursal</option>
+                        <option value=""></option>
                     </select>
                 </div>
 
@@ -47,14 +47,14 @@
                 <div class="form-group">
                     <label for="moneda">Moneda</label>
                     <select id="moneda" name="moneda">
-                        <option value="">Seleccione una moneda</option>
+                        <option value=""></option>
                     </select>
                 </div>
 
                 <!-- Precio -->
                 <div class="form-group">
                     <label for="precio">Precio</label>
-                    <input type="number" id="precio" name="precio"  pattern="^\d+(\.\d{1,2})?$" title="Debe ser un número positivo con hasta dos decimales">
+                    <input type="number" id="precio" name="precio" placeholder="0.00" step="0.01"  pattern="^\d+(\.\d{1,2})?$" title="Debe ser un número positivo con hasta dos decimales">
                 </div>
 
                 <!-- Material del Producto -->
@@ -145,7 +145,7 @@
                         },
                         dataType: "json",
                         success: function(response) {
-                            $('#sucursal').empty().append('<option value="">Seleccione una sucursal</option>');
+                            $('#sucursal').empty().append('<option value=""></option>');
 
                             if (response.length > 0) {
                                 response.forEach(function(sucursal) {
@@ -163,7 +163,7 @@
                         }
                     });
                 } else {
-                    $('#sucursal').empty().append('<option value="">Seleccione una sucursal</option>');
+                    $('#sucursal').empty().append('<option value=""></option>');
                 }
             });
             // Capturar el envío del formulario
