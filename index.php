@@ -168,7 +168,7 @@
             });
             // Capturar el envío del formulario
             $('#formProducto').on('submit', function(event) {
-                event.preventDefault(); // Prevenir el envío del formulario
+                event.preventDefault(); 
 
                 // Recoger datos del formulario
                 const formData = $(this).serialize();
@@ -181,17 +181,17 @@
                     dataType: "json",
                     success: function(res) {
                         if (res.success) {
-                            alert(res.message); // Mostrar el mensaje de éxito
+                            alert(res.message); 
                             window.location.href = 'index.php'; 
                             $('#formProducto')[0].reset(); // Resetear el formulario
                          
                         } else {
-                            alert(res.message); // Mostrar el mensaje de error
+                            alert(res.message);
                             window.location.href = 'index.php'; 
                         }
                     },
                     error: function(xhr, status, error) {
-                        alert("Ocurrió un error al procesar la solicitud."); // Mensaje de error genérico
+                        alert("Ocurrió un error al procesar la solicitud.");
                         console.error("Error al procesar la solicitud:", error);
                         window.location.href = 'index.php'; 
                     }

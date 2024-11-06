@@ -20,9 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit;
     }
 
-    // Llamar al controlador para insertar el producto
+   
     $respuesta = ProductoControlador::ctrCrearProducto($codigo, $nombre, $bodega, $sucursal, $moneda, $precio, $material, $descripcion);
 
-    // Devolver la respuesta
     echo json_encode($respuesta);
 }
