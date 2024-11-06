@@ -1,6 +1,6 @@
 # Formulario-producto
 Es un formulario con PHP que envía a los valores una Base de datos Mysql
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/57c1d8c5-4dac-47a7-8ef1-66c99b68f463)
 
 
 El modelo usa es un modelo MVC, con las siguientes tecnologias:
