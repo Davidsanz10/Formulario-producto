@@ -30,7 +30,7 @@ y comienzan la importación.
 
 El nombre de la BD se llama **formulario_productos**
 
-La configuración de la conexión a la BD está en modelo/producto.modelo.php
+La configuración de la conexión a la BD está en modelo/conexion.php
 ![image](https://github.com/user-attachments/assets/517d09c1-bfdd-450b-9b56-ea37a5ed5fcc)
 
 
